@@ -4,46 +4,158 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">The Past</a>
-                <a class="nav-item nav-link" href="#">The Present</a>
-                <a class="nav-item nav-link" href="#">The Future</a>
-                <a class="nav-item nav-link" href="#">Q&A</a>
-              </div>
-            </div>
-          </nav>
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" type="text/css" />
-        <style>
-            img {
-  float: right;
-  border: 2px black;
-  margin: 0px 0px 15px 20px;
-}
-            p {
-  font-size: 20px;
-}
+    <style>
+            :root {
+        --boxing-dark: #1a1a1a;
+        --boxing-gray: #f5f5f5;
+      }
+     body {
+        background-color: var(--boxing-gray);
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        background-color: var(--boxing-dark);
+        color: white;
+        }
+      .carousel-inner {
+        background-color: #d9d9d9;
+      }
+      .border-black {
+        border-color: var(--boxing-red);
+      }
         </style>
 
         <title>Title</title>
     </head>
     <body>
-      <div class="column">
-          <h3>Intro</h3>
-          <p>            <img align="right" src="https://cdn.shopify.com/s/files/1/0560/2535/0317/files/2_7b83da1a-6cdb-48b3-83b3-fd577b4929e6_600x600.jpg?v=1674738068" alt="boxing" style="width:50%">Boxing is a hand to hand combat sport it is a major branch in the world of martial arts and it has been around since ancient greece.consist of two fighters using their fist to try to cause most damage to their opponent while following a strict set of rules.technology plays a role in the world of boxing today and the future as there has been different inventions to help fighters become better boxers.The purpose of my website is to show how the whole process past present and future of different technology in the world of boxing that will help fighters become the best they can be with our own ideas and innovations.</p>
 
-          </div>
-          <div class="column">
-            <h3>The past</h3>
-            <img align="left" src="https://cdn-blog.scorum.com/production/brandonk/31c037b5b93eafae" alt="Past boxing" style="width:30%">
-          </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
+      <a class="nav-link active" aria-current="page" href="#past">The past</a>
+      <a class="nav-link active" aria-current="page" href="#present">The present</a>
+      <a class="nav-link active" aria-current="page" href="#future">The future</a>
+      <a class="nav-link active" aria-current="page" href="#FAQ">FAQ</a>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+    <header class="section-container">
+      <h3>Intro</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <strong>Boxing</strong><br />
+          <p>Boxing is a hand to hand combat sport it is a major branch in the world of martial arts and it has been around since ancient greece.consist of two fighters using their fist to try to cause most damage to their opponent while following a strict set of rules.technology plays a role in the world of boxing today and the future as there has been different inventions to help fighters become better boxers.The purpose of my website is to show how the whole process past present and future of different technology in the world of boxing that will help fighters become the best they can be with our own ideas and innovations.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://cdn.shopify.com/s/files/1/0560/2535/0317/files/2_7b83da1a-6cdb-48b3-83b3-fd577b4929e6_600x600.jpg?v=1674738068" class="img-fluid" alt="Intro Image">
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <section id="past" class="section-container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="carouselPast" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://via.placeholder.com/300x160" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/300x160" class="d-block w-100" alt="Slide 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPast" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPast" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>The Past</h3>
+          <ul>
+            <li>Boxing gloves</li>
+            <li>Protective gear</li>
+            <li>Etc</li>
+            <li>Etc</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="present" class="section-container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>The Present</h3>
+          <ul>
+            <li>Improved Gloves</li>
+            <li>Fashion attire</li>
+            <li>Apps</li>
+            <li>Technology</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="carouselPresent" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://via.placeholder.com/300x160" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/300x160" class="d-block w-100" alt="Slide 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPresent" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPresent" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="future" class="section-container">
+      <h3>The Future</h3>
+      <div class="border p-4 text-center">
+        <p>My Product</p>
+        <p><strong>Preassure plated ring floor</strong></p>
+      </div>
+      <p class="text-center mt-4">Description</p>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos eu cum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius
+      </p>
+    </section>
+
+    <footer id="FAQ">
+      <div class="section-container">
+        <h3>FAQ</h3>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare.</p>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <strong>Medium length question goes here</strong>
+            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+          </div>
+          <div class="col-md-4">
+            <strong>Medium length question goes here</strong>
+            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+          </div>
+          <div class="col-md-4">
+            <strong>Medium length question goes here</strong>
+            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="script.js"></script> -->
